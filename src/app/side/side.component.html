@@ -1,0 +1,14 @@
+<div id="sideComponent">
+<p-sidebar  [dismissible]="false" [modal]="false" styleClass="p-sidebar-sm bg-dark " [(visible)]="show" [style]="{width:'15em'}">
+    <img class="sideimg" src="assets/coreui-pro-angular-white.svg">
+    <div class="bg-dark">
+        <p-panelMenu [model]="activelist"></p-panelMenu>
+        <p class="theme fw-bold ms-2">THEME</p>
+        <p-panelMenu [model]="list"></p-panelMenu>
+        <p class="theme fw-bold ms-2">COMPONENTS</p>
+        <p-panelMenu [model]="sidelist"></p-panelMenu>
+        <p class="theme fw-bold ms-2">PLUGINS</p>
+        <p-panelMenu [model]="orderlist"></p-panelMenu>
+    </div>
+</p-sidebar>
+</div>

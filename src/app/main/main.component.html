@@ -1,0 +1,284 @@
+<div class="container bg-light  p-4 mx-2" id="mainComponent">
+    <div class="cards">
+        <div class="row mt-1 mb-4 ">
+            <div class="col-sm-3 cardrow" *ngFor="let credit of carding">
+                <p-card [ngClass]="'creditcard-'+ credit.head">
+                    <div class="d-flex text-white">
+                        <p>{{credit.nmbr}}</p>
+                        <p>{{credit.percentage}}</p>
+                        <i class="pi pi-ellipsis-v ms-auto" (click)="menu.toggle($event)"></i>
+                        <p-menu #menu [popup]="true" [model]="items"></p-menu>
+                    </div>
+                    <p class="text-white">{{credit.head}}</p>
+                    <p-chart type="line" [data]="basicData" [options]="basicOptions"></p-chart>
+                </p-card>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="line-head d-flex mt-4 ms-3">
+            <div class="line-header">
+                <p><b>Traffic</b></p>
+                <p class="line-para">January-December 2021</p>
+            </div>
+            <div class="line-right ms-auto d-flex">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon bg-white"> Day</span>
+                    <span class="p-inputgroup-addon "> Month</span>
+                    <span class="p-inputgroup-addon bg-white"> Year</span>
+                </div>
+                <p-button styleClass="  ms-3 me-3" icon="pi pi-cloud-download"></p-button>
+            </div>
+        </div>
+        <p-chart type="line" [data]="lineStylesData" [options]="basicOptions"></p-chart>
+        <div class="card-footer  mt-2  mb-2 bg-light text-center">
+            <div class="row d-flex mt-3 ">
+                <div class="col">
+                    <p>Visits</p>
+                    <p><b>29.703 Users (40%)</b></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Unique</p>
+                    <p><b>29.703 Users (20%)</b></p>
+                    <div class="progress">
+                        <div class="progress-bar1" role="progressbar" style="width: 30%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Page Views</p>
+                    <p><b>78.706 Views (60%)</b></p>
+                    <div class="progress">
+                        <div class="progress-bar2" role="progressbar" style="width: 70%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>New Users</p>
+                    <p><b>22.123 Users (80%)</b></p>
+                    <div class="progress">
+                        <div class="progress-bar3" role="progressbar" style="width: 80%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Bounce Rate</p>
+                    <p><b>Average Rate (40.15%)</b></p>
+                    <div class="progress">
+                        <div class="progress-bar4" role="progressbar" style="width: 40%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="row mt-4 ">
+            <div class="col-sm-3" id="facebook" *ngFor="let event of socialmedia">
+                <p-card [ngClass]="'feedsdata-'+event.content1">
+                    <ng-template pTemplate="header">
+                        <i class="{{event.icon}}  text-center text-white ms-5 p-5" style="font-size: 4rem"></i>
+                    </ng-template>
+                    <div class="row text-center">
+                        <div class="cardfoot col-6">
+                            <h5 class="text-dark">{{event.count}}</h5>
+                            <p>{{event.content}}</p>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-dark">{{event.count1}}</h5>
+                            <p>{{event.content1}}</p>
+                        </div>
+                    </div>
+                </p-card>
+            </div>
+        </div>
+    </div>
+    <div class="chartcard mt-4">
+        <p-card>
+            <ng-template pTemplate="header">
+                <h6 class="ms-2 pt-1">Traffic & Sales</h6>
+            </ng-template>
+            <div class="cards">
+                <div class="row px-3 ">
+                    <div class=" chartgrids col-3 mt-2" *ngFor="let traffic of clients">
+                        <p class="mt-1">{{traffic.name}}</p>
+                        <h4>{{traffic.count}}</h4>
+                    </div>
+                    <p-divider></p-divider>
+                </div>
+                <div class="row mb-5 mt-3">
+                    <div class="col-6">
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <p class="fs-6">Monday</p>
+                            </div>
+                            <div class="col-9">
+                                <p-progressBar [value]="50"></p-progressBar>
+                                <div class="bar1">
+                                    <p-progressBar [value]="70"></p-progressBar>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <p class="fs-6">Tuesday</p>
+                            </div>
+                            <div class="col-9">
+                                <p-progressBar [value]="60"></p-progressBar>
+                                <div class="bar1">
+                                    <p-progressBar [value]="90"></p-progressBar>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <p class="fs-6">Wednesday</p>
+                            </div>
+                            <div class="col-9">
+                                <p-progressBar [value]="10"></p-progressBar>
+                                <div class="bar1">
+                                    <p-progressBar [value]="60"></p-progressBar>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <p class="fs-6">Thursday</p>
+                            </div>
+                            <div class="col-9">
+                                <p-progressBar [value]="30"></p-progressBar>
+                                <div class="bar1">
+                                    <p-progressBar [value]="80"></p-progressBar>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <p class="fs-6">Friday</p>
+                            </div>
+                            <div class="col-9">
+                                <p-progressBar [value]="50"></p-progressBar>
+                                <div class="bar1">
+                                    <p-progressBar [value]="70"></p-progressBar>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <p class="fs-6">Saturday</p>
+                            </div>
+                            <div class="col-9">
+                                <p-progressBar [value]="50"></p-progressBar>
+                                <div class="bar1">
+                                    <p-progressBar [value]="70"></p-progressBar>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <p class="fs-6">Sunday</p>
+                            </div>
+                            <div class="col-9">
+                                <p-progressBar [value]="40"></p-progressBar>
+                                <div class="bar1">
+                                    <p-progressBar [value]="80"></p-progressBar>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row mb-2" id="iconprogress">
+                            <div class="iconbar d-flex">
+                                <i class="pi pi-check "></i>
+                                <p class="px-2">Male</p>
+                                <p class="ms-auto">43%</p>
+                            </div>
+                            <p-progressBar [value]="40"></p-progressBar>
+                        </div>
+                        <div class="row mb-2" id="iconprogress">
+                            <div class="iconbar d-flex">
+                                <i class="pi pi-check "></i>
+                                <p class="px-2">Female</p>
+                                <p class="ms-auto">37%</p>
+                            </div>
+                            <p-progressBar [value]="30"></p-progressBar>
+                        </div>
+                        <div class="row mb-5"></div>
+                        <div class="row" id="iconprog">
+                            <div class="iconbar d-flex">
+                                <i class="pi pi-google"></i>
+                                <p class="px-2">Organic Search</p>
+                                <p class="ms-auto">191,235(56%)</p>
+                            </div>
+                            <p-progressBar [value]="30"></p-progressBar>
+                        </div>
+                        <div class="row" id="iconprog">
+                            <div class="iconbar d-flex">
+                                <i class="pi pi-facebook "></i>
+                                <p class="px-2">Facebook</p>
+                                <p class="ms-auto">51,223(15%)</p>
+                            </div>
+                            <p-progressBar [value]="30"></p-progressBar>
+                        </div>
+                        <div class="row " id="iconprog">
+                            <div class="iconbar d-flex">
+                                <i class="pi pi-twitter "></i>
+                                <p class="px-2">Twitter</p>
+                                <p class="ms-auto">37,564(11%)</p>
+                            </div>
+                            <p-progressBar [value]="20"></p-progressBar>
+                        </div>
+                        <div class="row " id="iconprog">
+                            <div class="iconbar d-flex">
+                                <i class="pi pi-linkedin "></i>
+                                <p class="px-2">LinkedIn</p>
+                                <p class="ms-auto">27,319(8%)</p>
+                            </div>
+                            <p-progressBar [value]="10"></p-progressBar>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="card mt-4">
+        <p-card>
+            <p-table [value]="products">
+                <ng-template pTemplate="caption">
+                    <div class=" user">
+                        Users</div>
+                </ng-template>
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th><i class="pi pi-clock"></i></th>
+                        <th>User</th>
+                        <th>Country</th>
+                        <th>Usage</th>
+                        <th>Activity</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td class="tableimg"><img [src]="'assets/' + product.image" [alt]="product.name" width="40"
+                                height="40" class="shadow-4" /></td>
+                        <td>{{product.name}}<br><br>{{product.code}}</td>
+                        <td><img [src]="'assets/' + product.image1" [alt]="product.name" width="20" height="20"
+                                class="shadow-4" /></td>
+                        <td> <b>{{product.loading}}</b> {{product.date}}<br><br>
+                            <p-progressBar [value]="50"></p-progressBar>
+                        </td>
+                        <td>{{product.description}}<br><br><b>{{product.time}}</b></td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </p-card>
+    </div>
+    <div class="footer bg-light mt-4 d-flex">
+        <p><a>CoreUI</a>© 2022 creativeLabs</p>
+        <p class="ms-auto">Powered by <a>CoreUI v4 for Angular</a></p>
+    </div>
+</div>

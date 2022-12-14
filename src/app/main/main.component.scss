@@ -1,0 +1,239 @@
+// #mainComponent{
+//     :host::ng-deep .p-card .p-card-body {
+//         line-height: 11px;
+//         padding: 14px;
+//     }
+    
+//     .line-para {
+//         color: #2c384aae;
+//         font-size: 15px;
+    
+//     }
+    
+//     :host::ng-deep .creditcard-Users {
+//         .p-card {
+//             background-color: #1f1498;
+//         }
+//     }
+    
+//     :host::ng-deep .creditcard-Income {
+//         .p-card {
+//             background-color: #00BFFF;
+//         }
+//     }
+    
+//     :host::ng-deep .creditcard-ConversionRate {
+//         .p-card {
+//             background-color: #FFD700;
+//         }
+//     }
+    
+//     :host::ng-deep .creditcard-Sessions {
+//         .p-card {
+//             background-color: #FF5733;
+//         }
+//     }
+    
+//     :host::ng-deep .p-button.p-button-icon-only {
+//         width: 35px;
+//         height: 33px;
+//     }
+    
+//     .p-inputgroup {
+//         padding: 2px;
+//         height: 35px;
+    
+//     }
+    
+//     .line-header {
+//         line-height: 10px;
+//     }
+    
+//     .progress {
+//         width: 160px;
+//         height: 3px;
+    
+//         .progress-bar {
+//             background: #2eb85c;
+//             border-top-right-radius: 18px;
+//             border-bottom-right-radius: 18px;
+//         }
+    
+//         .progress-bar1 {
+//             background: #3399ff;
+//             border-top-right-radius: 18px;
+//             border-bottom-right-radius: 18px;
+//         }
+    
+//         .progress-bar2 {
+//             background: #f9b115;
+//             border-top-right-radius: 18px;
+//             border-bottom-right-radius: 18px;
+//         }
+    
+//         .progress-bar3 {
+//             background: #e55353;
+//             border-top-right-radius: 18px;
+//             border-bottom-right-radius: 18px;
+//         }
+    
+//         .progress-bar4 {
+//             background: #321fdb;
+//             border-top-right-radius: 18px;
+//             border-bottom-right-radius: 18px;
+//         }
+//     }
+    
+//     .col {
+//         line-height: 5px;
+//         font-size: 16px;
+//     }
+    
+//     :host::ng-deep .p-card .p-card-content {
+//         padding: 0px;
+    
+//     }
+    
+//     .cardfoot {
+//         border-right: 1px solid grey;
+//     }
+    
+//     :host::ng-deep .chartcard {
+    
+//         .p-card-header {
+//             background-color: #ebedef;
+//             border-bottom: 1px solid #44494e;
+//         }
+    
+//         .chartgrids:nth-child(1) {
+//             border-left: 4px solid skyblue;
+//             text-align: left;
+//             font-size: 15px;
+//         }
+    
+//         .chartgrids:nth-child(2) {
+//             border-left: 4px solid #e55353;
+//         }
+    
+//         .chartgrids:nth-child(3) {
+//             border-left: 4px solid #f9b115;
+    
+//         }
+    
+//         .chartgrids:nth-child(4) {
+//             border-left: 4px solid #2eb85c;
+    
+//         }
+//     }
+    
+//     :host::ng-deep .p-progressbar {
+//         height: 5px;
+//         margin-bottom: 5px;
+    
+//         .p-progressbar-value {
+//             .p-progressbar-label {
+//                 display: none !important;
+//             }
+//         }
+    
+    
+//     }
+    
+//     :host::ng-deep .bar1 .p-progressbar {
+//         .p-progressbar-value {
+    
+//             background: #E55353;
+//         }
+//     }
+    
+//     .chartcard {
+    
+//         i {
+//             margin-top: 0px;
+//         }
+//     }
+    
+//     :host::ng-deep #iconprogress .p-progressbar {
+//         .p-progressbar-value {
+//             background: #f9b115;
+    
+//         }
+//     }
+    
+//     :host::ng-deep #iconprog .p-progressbar {
+//         .p-progressbar-value {
+//             background: #2eb85c;
+    
+//         }
+//     }
+    
+//     #iconprog {
+//         margin-bottom: 14px;
+//     }
+    
+//     :host::ng-deep #tablecard {
+    
+//         .p-card-header {
+//             background-color: #ebedef;
+//             border-bottom: 1px solid #44494e;
+//         }
+//     }
+    
+//     .tableimg {
+    
+    
+//         img {
+//             border-radius: 50%;
+//         }
+//     }
+    
+//     .user .ng-star-inserted {
+//         float: left;
+//     }
+    
+//     .footer {
+//         a {
+//             color: blue;
+//             text-decoration: underline;
+//         }
+    
+//     }
+    
+//     :host::ng-deep.feedsdata-FRNDS {
+//         .p-card-header {
+//             background-color: red;
+    
+//         }
+    
+//     }
+    
+//     :host::ng-deep.feedsdata-FEEDS {
+//         .p-card-header {
+//             background-color: #3b5998;
+//             border-top-left-radius: 10px;
+//             border-top-right-radius: 10px;
+    
+//         }
+    
+//     }
+    
+//     :host::ng-deep.feedsdata-TWEETS {
+//         .p-card-header {
+//             background-color: #00aced;
+//             border-top-left-radius: 10px;
+//             border-top-right-radius: 10px;
+    
+//         }
+    
+//     }
+    
+//     :host::ng-deep.feedsdata-MEETINGS {
+//         .p-card-header {
+//             background-color: darkorange;
+//             border-top-left-radius: 10px;
+//             border-top-right-radius: 10px;
+    
+//         }
+    
+//     }
+// }

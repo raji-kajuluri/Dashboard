@@ -1,0 +1,606 @@
+#mainComponent {
+    .p-card {
+        .p-card-body {
+            line-height: 11px;
+            padding: 14px;
+        }
+    }
+
+    .line-para {
+        color: #2c384aae;
+        font-size: 15px;
+
+    }
+
+    .creditcard-Users {
+        .p-card {
+            background-color: #1f1498;
+        }
+    }
+
+    .creditcard-Income {
+        .p-card {
+            background-color: #00BFFF;
+        }
+    }
+
+    .creditcard-ConversionRate {
+        .p-card {
+            background-color: #FFD700;
+        }
+    }
+
+    .creditcard-Sessions {
+        .p-card {
+            background-color: #FF5733;
+        }
+    }
+
+    .p-button.p-button-icon-only {
+        width: 35px;
+        height: 33px;
+    }
+
+    .p-inputgroup {
+        padding: 2px;
+        height: 35px;
+
+    }
+
+    .line-header {
+        line-height: 10px;
+    }
+
+    .progress {
+        width: 160px;
+        height: 3px;
+
+        .progress-bar {
+            background: #2eb85c;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+
+        .progress-bar1 {
+            background: #3399ff;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+
+        .progress-bar2 {
+            background: #f9b115;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+
+        .progress-bar3 {
+            background: #e55353;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+
+        .progress-bar4 {
+            background: #321fdb;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+    }
+
+    .col {
+        line-height: 5px;
+        font-size: 16px;
+    }
+
+    :host::ng-deep .p-card .p-card-content {
+        padding: 0px;
+
+    }
+
+    .cardfoot {
+        border-right: 1px solid grey;
+    }
+
+    .chartcard {
+
+        .p-card-header {
+            background-color: #ebedef;
+            border-bottom: 1px solid #44494e;
+        }
+
+        .chartgrids:nth-child(1) {
+            border-left: 4px solid skyblue;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        .chartgrids:nth-child(2) {
+            border-left: 4px solid #e55353;
+        }
+
+        .chartgrids:nth-child(3) {
+            border-left: 4px solid #f9b115;
+
+        }
+
+        .chartgrids:nth-child(4) {
+            border-left: 4px solid #2eb85c;
+
+        }
+    }
+
+    .p-progressbar {
+        height: 5px;
+        margin-bottom: 5px;
+
+        .p-progressbar-value {
+            .p-progressbar-label {
+                display: none !important;
+            }
+        }
+
+
+    }
+
+    .bar1 .p-progressbar {
+        .p-progressbar-value {
+
+            background: #E55353;
+        }
+    }
+
+    .chartcard {
+
+        i {
+            margin-top: 0px;
+        }
+    }
+
+    #iconprogress .p-progressbar {
+        .p-progressbar-value {
+            background: #f9b115;
+
+        }
+    }
+
+    #iconprog .p-progressbar {
+        .p-progressbar-value {
+            background: #2eb85c;
+
+        }
+    }
+
+    #iconprog {
+        margin-bottom: 14px;
+    }
+
+    #tablecard {
+
+        .p-card-header {
+            background-color: #ebedef;
+            border-bottom: 1px solid #44494e;
+        }
+    }
+
+    .tableimg {
+
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .user .ng-star-inserted {
+        float: left;
+    }
+
+    .footer {
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+    }
+
+    .feedsdata-FRNDS {
+        .p-card-header {
+            background-color: red;
+
+        }
+
+    }
+
+    .feedsdata-FEEDS {
+        .p-card-header {
+            background-color: #3b5998;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+    }
+
+    .feedsdata-TWEETS {
+        .p-card-header {
+            background-color: #00aced;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+    }
+
+    .feedsdata-MEETINGS {
+        .p-card-header {
+            background-color: darkorange;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+    }
+}
+
+#chartComponent {
+    .container {
+        margin-left: 20px;
+
+    }
+
+    .cards {
+        border-left: 5px solid #39f;
+    }
+
+    .card {
+
+        p {
+            background-color: #f2f2f2;
+
+        }
+
+    }
+
+    .footer {
+        border-top: 1px solid #c4c9d0;
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+    }
+
+}
+
+#colorComponent {
+    .p-card-header {
+        background-color: whitesmoke;
+        padding: 3px;
+        color: grey;
+
+    }
+
+    .p-card {
+        margin-left: 20px;
+    }
+
+    .d-flex {
+        *.mb-3 {
+            margin-right: 70px;
+            border-radius: 8PX;
+            height: 129px;
+            width: 129px;
+
+        }
+    }
+
+    .footer {
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+    }
+
+}
+
+#graphComponent {
+    .container {
+        margin-left: 20px;
+
+    }
+
+    .cards {
+        border-left: 5px solid #39f;
+    }
+
+    .card {
+
+        p {
+            background-color: #f2f2f2;
+            padding: 3px;
+        }
+
+    }
+
+    .footer {
+        border-top: 1px solid #c4c9d0;
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+    }
+
+}
+
+#sidebarComponent {
+    .p-inputgroup-addon:last-child {
+        background-color: #321fdb;
+        color: white;
+        height: 35px;
+
+    }
+
+    .p-inputgroup-addon:first-child {
+        background-color: #5b4ce2;
+        color: white;
+        height: 35px;
+    }
+
+    .pi-list .p-badge {
+        background: #f9b115;
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        min-width: 18px;
+        height: 18px;
+        line-height: 17px;
+    }
+
+    .pi-bell .p-badge {
+        background: #e55353;
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        min-width: 18px;
+        height: 18px;
+        line-height: 17px;
+    }
+
+    .pi-envelope .p-badge {
+        background: #3399ff;
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        min-width: 18px;
+        height: 18px;
+        line-height: 17px;
+    }
+
+    .start {
+        color: #2c384aae;
+        background-color: #ebedef;
+        font-weight: bold;
+        border-left: 3px solid grey;
+        border-bottom: 0.2px solid #2c384aae;
+    }
+
+    .p-sidebar {
+        .lucasimg {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 40px 0px 0px 50px;
+        }
+
+        .icons {
+            line-height: 1px;
+            font-size: 15px;
+        }
+
+    }
+
+    .tabview2 {
+        padding: 20px;
+
+        img {
+
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-top: 14px;
+        }
+
+        p {
+            margin-left: 15px;
+        }
+
+    }
+
+    .sideimg.mx-auto.p-inputgroup-addon {
+        background: none;
+        border: none;
+    }
+
+    .lucas {
+        border-left: 3px solid #f9b115;
+        line-height: 1px;
+        border-bottom: 1px solid #2c384aae;
+
+    }
+
+    .megas {
+        border-left: 3px solid #39f;
+        line-height: 1px;
+        border-bottom: 1px solid #2c384aae;
+
+    }
+
+    .garden {
+        border-left: 3px solid #2eb85c;
+        line-height: 1px;
+        border-bottom: 1px solid #2c384aae;
+
+    }
+
+    .avatar {
+        line-height: 1px;
+        border-left: 3px solid #e55353;
+        border-bottom: 1px solid #2c384aae;
+
+    }
+
+    .avatar1 {
+        line-height: 1px;
+        border-left: 3px solid #321fdb;
+        border-bottom: 1px solid #2c384aae;
+
+    }
+
+    .p-sidebar .p-sidebar-header {
+        display: none;
+
+    }
+
+    .p-tabmenuitem:hover {
+        border: none;
+
+
+    }
+
+    .p-sidebar .p-sidebar-content {
+        padding: 0px;
+    }
+
+    .p-tabview .p-tabview-panels {
+        padding: 0px;
+    }
+
+    .meet {
+        margin-left: 10px;
+    }
+
+    .p-avatar-group {
+        margin: 10px 0px 15px 14px;
+    }
+
+    .p-avatar-group .p-avatar {
+        border: none;
+    }
+
+    .head {
+        padding: 10px 0px 0px 25px;
+        border-bottom: 1px solid grey;
+    }
+
+    .headlist {
+        list-style: none;
+        color: blue;
+        text-decoration: underline;
+
+    }
+
+    .headpara {
+        color: #2c384af2;
+    }
+
+    .closeicon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+        box-shadow: none;
+    }
+}
+
+#sideComponent {
+    .p-sidebar {
+
+        .p-sidebar-header {
+            display: none;
+
+        }
+
+        .p-sidebar-content {
+            padding: 3px;
+        }
+    }
+
+    .p-panelmenu {
+
+
+        .p-panelmenu-header>a {
+            border: none;
+            background: none;
+        }
+
+        .p-menuitem-badge {
+            margin-left: auto;
+            background-color: #d93737;
+
+        }
+
+        .p-panelmenu-content {
+            background-color: black;
+            padding-left: 48px;
+        }
+
+        .p-menuitem-text {
+            font-weight: normal;
+            line-height: 1;
+            color: #ffffff99;
+        }
+    }
+
+    .p-panelmenu .p-panelmenu-header:not(.p-highlight):not(.p-disabled)>a:hover {
+        background: rgb(255, 255, 255, 0.2);
+        border: none;
+        color: rgba(255, 255, 255, 0.6);
+        border-radius: 0;
+    }
+
+    .p-panelmenu .p-panelmenu-header.p-highlight:not(.p-disabled)>a:hover {
+        border-color: #343a40;
+        background: none;
+        color: #343a40;
+
+    }
+
+    .sideimg {
+
+        padding: 11px;
+        background-color: black;
+    }
+
+    .p-button {
+
+        height: 16px;
+        border: none;
+        padding: 6px;
+        font-size: 9px;
+        margin-left: 52px;
+        border-radius: 6px;
+    }
+
+    ul {
+        padding: 5px;
+        list-style: none;
+    }
+
+    .theme {
+        font-size: 15px;
+    }
+
+    .navlist {
+        color: #ffffff99;
+
+    }
+
+    .p-panelmenu .p-panelmenu-header>a:focus {
+        box-shadow: none;
+    }
+
+}

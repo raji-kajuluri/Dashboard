@@ -1,0 +1,38 @@
+<div class="container bg-light mt-5" id="chartComponent">
+    <div class="cards p-2">
+        <p>Angular wrapper component for Chart.js 3.6, the most popular charting library.</p>
+        <p>For more information please visit our official documentation of CoreUI Components Library for Angular.</p>
+    </div>
+    <div class="row mt-5">
+        <div class="col-6">
+            <div class="card">
+                <p class="p-2">Bar Chart</p>
+                <p-chart type="bar" [data]="stackedData" [options]="stackedOptions"></p-chart>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <p class="p-2">Line Chart</p>
+                <p-chart type="line" [data]="basicData" [options]="basicOptions"></p-chart>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-6">
+            <div class="card">
+                <p class="p-2">Doughnut Chart</p>
+                <p-chart type="doughnut" [data]="data" [options]="chartOptions"></p-chart>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <p class="p-2">Pie Chart</p>
+                <p-chart type="pie" [data]="pie" [options]="chartOptions"></p-chart>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-light mt-3 d-flex">
+        <p><a>CoreUI</a>© 2022 creativeLabs</p>
+        <p class="ms-auto">Powered by <a>CoreUI v4 for Angular</a></p>
+    </div>
+</div>

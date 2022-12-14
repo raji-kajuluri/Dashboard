@@ -1,0 +1,136 @@
+<div id="sidebarComponent">
+    <p-toolbar styleClass="bg-white">
+        <div class="p-toolbar-group-left">
+            <i class="pi pi-bars mx-3"></i>
+            <p class=" m-2">Dashboard</p>
+            <p class=" m-2">Users</p>
+            <p class=" m-2">Settings</p>
+        </div>
+        <div class="p-toolbar-group-right">
+            <div class="p-inputgroup me-3">
+                <span class="p-inputgroup-addon"><i class="pi pi-sun"></i></span>
+                <span class="p-inputgroup-addon"><i class="pi pi-moon"></i></span>
+            </div>
+            <i class="pi pi-bell  me-4 p-text-secondary" (click)="menu.toggle($event)" pBadge style="font-size: 20px"
+                value="2"></i>
+            <p-menu [style]="{width:'15em'}" #menu [popup]="true" [model]="itemslist"></p-menu>
+            <i class="pi pi-list me-4 p-text-secondary px-1" (click)="menu1.toggle($event)" pBadge
+                style="font-size: 20px" value="5"></i>
+            <p-menu [style]="{width:'18em'}" #menu1 [popup]="true" [model]="poplist"></p-menu>
+            <i class="pi pi-envelope me-4 p-text-secondary" pBadge style="font-size: 20px" value="4"></i>
+            <div class="imgbadge">
+                <p-avatar image="./assets/8.jpg" pBadge styleClass="mr-2" shape="circle"></p-avatar>
+            </div>
+            <i class="pi pi-qrcode mx-3 px-1" (click)="display()"></i>
+        </div>
+    </p-toolbar>
+    <p-sidebar styleClass="p-sidebar" [(visible)]="display1" position="right" [style]="{width:'22em'}">
+        <p-tabView>
+            <p-tabPanel header="" leftIcon="pi pi-list">
+                <div class="start text-center p-2">TODAY</div>
+                <div class="lucas p-inputgroup">
+                    <div class="meet  mt-3">
+                        <p>Meeting with <b>Lucas</b></p>
+                        <div class="icons d-flex">
+                            <p><i class="pi pi-calendar-minus mt-2"></i> 1-3pm</p>
+                            <p><i class="pi pi-map-marker ms-3 mt-2"></i>Palo,Alto</p>
+                        </div>
+                    </div>
+                    <div class="sideimg mx-auto p-inputgroup-addon"><img class="lucasimg" src="assets/7.jpg"></div>
+                </div>
+                <div class="megas p-inputgroup">
+                    <div class="meet  mt-3">
+                        <p>Skype with <b>Megan</b></p>
+                        <div class="icons d-flex">
+                            <p><i class="pi pi-calendar-minus mt-2"></i> 4-5pm</p>
+                            <p><i class="pi pi-whatsapp ms-3 mt-2"></i> On-line</p>
+                        </div>
+                    </div>
+                    <div class="sideimg mx-auto p-inputgroup-addon"><img class="lucasimg" src="assets/4.jpg"></div>
+                </div>
+                <div class="start text-center p-2">TOMORROW</div>
+                <div class="avatar">
+                    <div class="deadline p-inputgroup">
+                        <div class="meet  mt-3">
+                            <p>New UI Project-<b>deadline</b></p>
+                            <div class="icons d-flex">
+                                <p><i class="pi pi-calendar-minus mt-2"></i> 10-11pm</p>
+                                <p><i class="pi pi-home ms-3 mt-2"></i> creativeLabs HQ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p-avatarGroup>
+                        <p-avatar image="./assets/2.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/3.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/4.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/5.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/6.jpg" shape="circle"></p-avatar>
+                    </p-avatarGroup>
+                </div>
+                <div class="garden  p-inputgroup">
+                    <div class="meet  mt-3 ">
+                        <p> <b>#Startups.Garden</b> Meetup</p>
+                        <div class="icons d-flex">
+                            <p><i class="pi pi-calendar-minus mt-2"></i> 1-3pm</p>
+                            <p><i class="pi pi-map-marker ms-3 mt-2"></i>Palo,Alto</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="avatar1">
+                    <div class="deadline p-inputgroup">
+                        <div class="meet  mt-3">
+                            <p>New UI Project-<b>Team meeting</b></p>
+                            <div class="icons d-flex">
+                                <p><i class="pi pi-calendar-minus mt-2"></i> 4-6pm</p>
+                                <p><i class="pi pi-home ms-3 mt-2"></i> creativeLabs HQ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p-avatarGroup>
+                        <p-avatar image="./assets/2.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/3.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/4.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/5.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/6.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/3.jpg" shape="circle"></p-avatar>
+                        <p-avatar image="./assets/3.jpg" shape="circle"></p-avatar>
+                    </p-avatarGroup>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel header="" leftIcon="pi pi-comment">
+                <div class="tabview2 d-flex mt-2">
+                    <img src="assets/8.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi porro soluta dolore ex
+                        voluptatem repellend...</p>
+                </div>
+                <div class="tabview2 d-flex mt-2">
+                    <img src="assets/7.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi porro soluta dolore ex
+                        voluptatem repellend...</p>
+                </div>
+                <div class="tabview2 d-flex mt-2">
+                    <img src="assets/2.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi porro soluta dolore ex
+                        voluptatem repellend...</p>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel header="" leftIcon="pi pi-cog">
+                <p class="p-5">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non
+                    numquam eius modi.
+                </p>
+            </p-tabPanel>
+        </p-tabView>
+        <i (click)="display2()" class="pi pi-times closeicon"></i>
+    </p-sidebar>
+    <div class="head bg-white d-flex ">
+        <li class="headlist">Home</li>
+        <p class="headpara "> / Dash board</p>
+    </div>
+</div>

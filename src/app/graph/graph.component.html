@@ -1,0 +1,20 @@
+<div class="container bg-light mt-5" id="graphComponent">
+    <div class="row mt-5">
+        <div class="col-6">
+            <div class="card">
+                <p class="p-2">Polar Area Chart</p>
+                <p-chart type="polarArea" [data]="data" [options]="chartOptions"></p-chart>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <p class="p-2">Radar Chart</p>
+                <p-chart type="radar" [data]="radar" [options]="radaroptions"></p-chart>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-light p-2 mt-4 d-flex">
+        <p><a>CoreUI</a>© 2022 creativeLabs</p>
+        <p class="ms-auto">Powered by <a>CoreUI v4 for Angular</a></p>
+    </div>
+</div>
